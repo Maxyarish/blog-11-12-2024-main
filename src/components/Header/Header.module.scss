@@ -1,0 +1,49 @@
+@use '/src/common/styles/breakpoints' as *;
+.header{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.header-top{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+     padding: 0.0.5rem;
+    height: 2.5em;
+    font-weight: 700;
+    background-color: rgb(123, 123, 123);
+    p{
+        margin: 0;
+    }
+    span{
+        padding-right:0.5rem ;
+    }
+}
+.header-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.0.5rem;
+    @media screen and (max-width: $s){
+flex-direction: column;
+align-items: flex-start;
+    }
+}
+.header-search{
+    margin-right: 10px;
+    background-color: rgb(89, 89, 89);
+    width: 160px;
+    height:25px;
+   border: 1px solid;
+   border-radius:25px;
+   padding-left: 10px;
+}
+.header-logo{
+    border: 1px solid;
+    padding: 0.3em;
+    border: 1px solid;
+    border-radius: 25px;
+    width: 65px;
+    text-align: center;
+    background-color: rgb(105, 105, 105);
+}

@@ -1,0 +1,12 @@
+.menu{
+    li{
+        display: inline-block;
+    }
+    a{
+        margin: 0.2em;
+        padding: 0.5em;
+        border: 1px solid;
+        border-radius: 25px;
+        background-color: rgb(105, 105, 105);
+    }
+}
