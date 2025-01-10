@@ -1,0 +1,26 @@
+@use '/src/common/styles/color' as *;
+@use '/src/common/styles/breakpoints' as *;
+.post-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1em;
+    cursor: pointer;
+    .post-card_title{
+text-align: left;
+    }
+    &:hover{
+       background-color: lightyellow;
+    }
+    a:hover{
+        color: greenyellow;
+        text-decoration: underline;
+    }
+    img{
+        margin-right: 15px;
+    }
+    @media all and (min-width:$m){
+    flex-direction: row;
+}
+
+}

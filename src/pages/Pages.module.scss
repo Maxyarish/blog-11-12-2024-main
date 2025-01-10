@@ -1,0 +1,17 @@
+@use '/src/common/styles/template' as *;
+
+.wrapper{
+  @extend %limit-width
+}
+.relative{
+  position: relative;
+}
+h1,h2,h3{
+  text-align:center
+}
+.section-header{
+  display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 0.5em;
+}

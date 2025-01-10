@@ -5,10 +5,13 @@ const Menu = () => {
     <nav className={styles.menu}>
       <ul>
         <li>
-          <NavLink to='/'>Home</NavLink>
+          <NavLink to='/' className={({isActive})=>(isActive ? styles.active :undefined)}>Home</NavLink>
         </li>
         <li>
-          <NavLink to='/authors'>Users</NavLink>
+          <NavLink to='/posts' className={({isActive})=>(isActive ? styles.active :undefined)}>Blog</NavLink>
+        </li>
+        <li>
+          <NavLink to='/users' className={({isActive})=>(isActive ? styles.active:undefined)}>Users</NavLink>
           </li>
       </ul>
     </nav>
